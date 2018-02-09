@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerView_Selected.setLayoutManager(new GridLayoutManager(this,4));
         mSelectedAdatper = new SelectedRecycleAdapter(this,mSelectedDatas);
         mRecyclerView_Selected.setAdapter(mSelectedAdatper);
-        mRecyclerView_Selected.addItemDecoration(new SpaceItemDecoration(8));
+        mRecyclerView_Selected.addItemDecoration(new SpaceItemDecoration(8));  //添加自定义分割线
 
         mRecyclerView_UnSelected.setLayoutManager(new GridLayoutManager(this,4));
         mUnSelectedAdatper = new UnSelectedRecycleAdapter(this,mUnselectedDatas);
@@ -186,7 +186,7 @@ public class MainActivity extends AppCompatActivity {
         }
         isDeleteIconShow = false;
     }
-    //显示出所有删除的图标
+    //显示出所有添加的图标
 
     private void showAllAddIcons() {
         int count = mRecyclerView_UnSelected.getChildCount();
